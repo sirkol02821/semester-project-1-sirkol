@@ -1,0 +1,58 @@
+@media (min-width: 600px){
+    header {
+      margin: auto;
+      flex-direction: row;
+    }
+    nav {
+    display: block;
+    position: static;
+    border-color: var(--color-light);;
+    }
+    .hamburger-icon {
+      display: none;
+    }
+    nav ul {
+      padding: 0px;
+    }
+    nav li {
+      display: inline-block
+    }
+    nav a {
+      display: inline-block;
+    }
+    
+    footer .container{
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 30px;
+      max-width: fit-content;
+      padding-bottom: 20px;
+    }
+
+    .two-column {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .two-column section{
+      max-width: 50%;
+      min-width: 50%;
+    }
+
+    .form-narrow, .submit-button {
+      min-width: 540px;
+      max-width: 60%;
+    }
+
+    /*Index page featured*/
+    .featured {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .banner {
+      max-height: 500px;
+      object-position: center;
+    }
+  }

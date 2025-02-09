@@ -1,0 +1,15 @@
+/* Used for Terms and Conditions page and Privacy Policy page */
+
+.document-style {
+    padding: 30px;
+}
+
+.document-style h2 {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.document-style ul {
+    padding-left: 40px;
+}
+

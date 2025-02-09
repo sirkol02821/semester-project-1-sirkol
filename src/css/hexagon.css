@@ -1,0 +1,140 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body .hexagons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .hexagon {
+    position: relative;
+    width: 80vw;
+    height: 69.5vw;
+    margin: 50px 20px 70px;
+}
+/* I do not want to seperate this media query from the other related coding*/
+@media (min-width: 600px){
+    .container .hexagon {
+        max-width: 500px;
+        max-height: 435px;
+    }
+}
+
+.container .hexagon::before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(var(--color-dark),var(--color-light),transparent);
+    border-radius: 50%;
+}
+.container .hexagon:hover::before{
+    opacity: 0.8;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.container .hexagon .shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: 0.5s;
+}
+
+.container .hexagon:hover .shape {
+    transform: translateY(-30px);
+}
+
+.container .hexagon .shape img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.container .hexagon .shape .hexagon-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    text-align: center;
+    background: var(--color-logo);
+    color: var(--color-light);
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 6vw;
+}
+@media (min-width: 600px){
+    .container .hexagon .shape .hexagon-content {
+        font-size: 2.5em;
+    }
+}
+
+.container .hexagon:hover .shape .hexagon-content {
+    opacity: 0.9;
+}
+
+.hex-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+@media (min-width: 800px){
+    .hex-info {
+        flex-wrap: nowrap;
+    }
+}
+.hex-info p {
+    padding: 3px;
+    margin:0px 20px;
+}
+
+
+/* Hexagonal Image -- No effects */
+.hex-img {
+    position: relative;
+    max-width: 80%;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+@media (min-width: 600px){
+    .hex-img {
+        max-width: 50%;
+    }
+}
+
+
+.hex-w-text {
+    position: relative;
+    max-width: 80%;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}

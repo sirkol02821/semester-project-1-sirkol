@@ -1,0 +1,84 @@
+.opening-hours {
+  border-style: dashed;
+  border-color: var(--color-logo);
+  border-radius: 20px;
+  margin: auto;
+}
+
+.form-column {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .form-column .button {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  form {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: 1px solid var(--color-tertiary);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: left;
+    padding: 10px 20px;
+  }
+  
+  .form-narrow {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 5px;
+  }
+
+  input, textarea, select {
+    border: solid 1px;
+    border-color: var(--color-medium);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+
+  .submit-button {
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    background-color: var(--color-medium);
+    padding: 14px 0px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-light);
+}
+
+/* Checkbox revealed information */
+  #checkbox-confirmation, .confirmation {
+    display: none;
+    }
+  
+  #checkbox-confirmation:checked ~ .confirmation {
+    display: block;
+    }
+
+  .confirmation {
+    text-align: center;
+    border: solid 3px var(--color-dark);
+    border-radius: 5px;
+    padding: 50px 10px;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+  }
+  .confirmation p {
+    text-align: center;
+  }
+
+  .confirmation .button {
+    display: inline-flex;
+    margin: 5px;
+  }

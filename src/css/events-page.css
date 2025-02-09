@@ -1,0 +1,67 @@
+.eventpage {
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 15px;
+    padding-bottom: 50px;
+}
+
+.events {
+    border-style: solid;
+    border-color: var(--color-medium);
+    border-radius: 4px;
+    max-width: 315px;
+}
+
+.events img {
+    max-width: 100%;
+}
+
+.event-name {
+    text-align: center;
+}
+
+.ages {
+    color: var(--color-logo);
+    font-weight: bold;
+    text-align: center;
+}
+.date {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.signup-button {
+    display: block;
+    width: 100%;
+    background-color: var(--color-medium);
+    padding: 14px 28px;
+    text-align: center;
+    color: var(--color-light);
+}
+
+.newsletter {
+    max-width: 500px;
+    padding: 20px 40px;
+    border-style: dashed;
+    border-color: var(--color-medium);
+    border-radius: 5px;
+    background-color: var(--color-logo);
+    margin: 20px;
+}
+.newsletter .signup-button {
+    border-radius: 5px;
+}
+
+.newsletter h2 {
+    color: var(--color-dark);
+    text-align: center;
+    padding-bottom: 10px;
+}
+.newsletter p {
+    padding-bottom: 20px;
+    color: var(--color-dark);
+}

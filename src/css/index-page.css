@@ -1,0 +1,34 @@
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.featured .container .hexagon {
+    position: relative;
+    width: 250px;
+    height: 217px;
+    margin: 50px 20px 70px;
+}
+
+.featured h3 {
+    font-size: 2rem;
+}
+
+.news {
+    border-style: dashed;
+    border-color: var(--color-logo);
+    border-radius: 20px;
+    margin: auto;
+}
+.news img {
+    display: flex;
+    margin: 0px auto;
+    max-width: 50%;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.text .events {
+    margin: 5px;
+}

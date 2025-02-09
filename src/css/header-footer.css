@@ -1,0 +1,85 @@
+
+header, footer ul{
+  list-style: none;
+  padding: 0px;
+}
+
+header .logo, footer .logo {
+  max-width: 200px;
+}
+
+nav, 
+#menu-checkbox {
+  display: none;
+  }
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-light);
+    color: var(--color-dark);
+    position: relative;
+    padding: 10px;
+    font-size: 1.5rem;
+    align-items: center;
+    box-shadow: 0px 5px 10px 5px var(--color-dark);
+    z-index: 1;
+  }
+
+nav {
+  position: fixed;
+  align-self: baseline;
+  background: var(--color-light);
+  border: 2px solid var(--color-medium);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--color-dark);
+}
+
+
+footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+}
+
+footer li{
+  padding: 10px;
+}
+
+.contact-info li{
+  padding: 0px;
+}
+
+footer a {
+  color: var(--color-light);
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div {
+  padding-top: 30px;
+  max-width: 400px;
+  min-width: 100px;
+}
+
+footer .fa-brands {
+  font-size: 2em;
+  padding: 5px;
+}
+
+footer .one-column {
+  max-width: 100%;
+}

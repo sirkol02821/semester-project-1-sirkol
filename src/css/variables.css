@@ -1,0 +1,10 @@
+/* Use this file to store your useful variables */
+/* This could be colors, fonts, or padding sizes! */
+
+:root {
+  --color-light: #effbfe;
+  --color-medium: #197086;
+  --color-dark: #0b1c30;
+  --color-logo: #2cc6ec;
+  --color-accent: #f88e14;
+}

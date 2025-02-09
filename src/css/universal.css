@@ -1,0 +1,128 @@
+h1 {
+  color: var(--color-medium);
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: var(--color-logo);
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+a {
+    text-decoration: none;
+  }
+
+.text-logo-col, .fa-brands {
+  color: var(--color-logo)
+}
+.text-dark {
+  color: var(--color-dark)
+}
+.text {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.text p {
+  padding-top: 10px;
+}
+.text h2 {
+  padding-top: 20px;
+}
+
+.text li{
+  list-style: none;
+}
+
+.selected-page {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.hero-image {
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.logo {
+  max-width: 200px;
+  padding: 10px 5px;
+}
+
+main p {
+  text-align: left;
+  color: var(--color-logo);
+}
+
+main h1, h2, p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main h1 {
+  padding-top: 20px;
+}
+
+.banner {
+  max-width: 100%;
+}
+
+.button {
+  background-color: var(--color-medium);
+  color: var(--color-light);
+  width: fit-content;
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-style: solid;
+  border-color: var(--color-dark);
+  border-radius: 0.4em;
+  text-align: center;
+}
+.button a{
+  color: var(--color-light);
+}
+.focus {
+  font-size: 1.5rem;
+}
+
+/* Exhibition page */
+.text-overlay {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./wander.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0px 0px 10px 10px var(--color-light) inset;
+  border-radius: 50%;
+}
+
+.text-overlay p {
+  padding: 1rem;
+  text-align: center;
+  color: var(--color-light);
+  font-size: 1.3rem;
+  z-index: 2;
+  text-shadow: 2px 2px var(--color-dark);
+}
+
+.text-overlay:after {
+  content: '';
+  position:absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: black;
+  opacity: 0.3;
+  box-shadow: 0px 0px 10px 10px var(--color-light) inset;
+}

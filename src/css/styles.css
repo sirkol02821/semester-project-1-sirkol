@@ -1,0 +1,45 @@
+/* Use import to split up your CSS into manageable chunks */
+@import url("./reset.css");
+/* Files that are only needed to be imported are called partials */
+/* These are marked with an underscore: */
+@import url("./variables.css");
+/* Feel free to add as many of these imports as you need */
+@import url("./header-footer.css");
+@import url("./universal.css");
+@import url("./media-queries.css");
+@import url("./hexagon.css");
+@import url("./document-style.css");
+@import url("./visit-page.css");
+@import url("./contact-page.css");
+@import url("./index-page.css");
+@import url("./events-page.css");
+
+
+body {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  background-image: url("background1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+ .background {
+  filter: blur(4px);
+ }
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  vertical-align: middle;
+  text-align: left;
+  background-color: var(--color-light);
+  color: var(--color-medium);
+  box-shadow: 0px 5px 10px 10px var(--color-logo);
+  min-height: 100vh;
+}
+
+main p{
+  color: var(--color-medium);
+}
