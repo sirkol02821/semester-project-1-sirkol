@@ -106,7 +106,7 @@ main h1 {
 }
 
 .text-overlay p {
-  padding: 1rem;
+  padding: 1rem 2rem;
   text-align: center;
   color: var(--color-light);
   font-size: 1.3rem;
