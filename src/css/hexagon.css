@@ -85,7 +85,7 @@ body .hexagons {
     align-items: center;
     padding: 80px;
     text-align: center;
-    background: var(--color-logo);
+    background: var(--color-medium);
     color: var(--color-light);
     opacity: 0;
     transition: 0.5s;
